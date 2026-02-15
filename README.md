@@ -1,3 +1,5 @@
+[![CI](https://github.com/YOUR-USERNAME/ethiopia-fi-forecast/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/YOUR-USERNAME/ethiopia-fi-forecast/actions/workflows/ci.yml)
+
 # Ethiopia Financial Inclusion Forecasting System
 
 Selam Analytics project for consortium (NBE, DFIs, mobile operators) to forecast **Account Ownership (Access)** and **Digital Payment Usage** to 2027.
