@@ -1,4 +1,4 @@
-[![CI](https://github.com/YOUR-USERNAME/ethiopia-fi-forecast/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/samuel-0228/ethiopia-fi-forecast/actions/workflows/ci.yml)
+[![CI](https://github.com/YOUR-USERNAME/ethiopia-fi-forecast/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/samuel-022/ethiopia-fi-forecast/actions/workflows/ci.yml)
 
 # Ethiopia Financial Inclusion Forecasting System
 
