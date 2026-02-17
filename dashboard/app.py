@@ -15,8 +15,8 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     # Resolve project root from dashboard/app.py location
-    # dashboard/app.py → parents[2] = project root (ethiopia-fi-forecast/)
-    PROJECT_ROOT = Path(__file__).resolve().parents[2]
+    # dashboard/app.py -> parents[1] = project root (ethiopia-fi-forecast/)
+    PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
     # Define expected file paths
     enriched_path = PROJECT_ROOT / "data" / "processed" / \
