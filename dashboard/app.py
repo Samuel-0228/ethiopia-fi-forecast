@@ -131,13 +131,26 @@ fig_trend = px.line(
     markers=True
 )
 
-# Add event lines
-fig_trend.add_vline(x='2021-05-01', line_dash="dash",
-                    line_color="red", annotation_text="Telebirr")
-fig_trend.add_vline(x='2023-08-01', line_dash="dash",
-                    line_color="green", annotation_text="M-Pesa")
-fig_trend.add_vline(x='2025-12-09', line_dash="dash",
-                    line_color="purple", annotation_text="NDPS Launch")
+# Add event lines and labels.
+# Plotly can raise a TypeError when using annotation_text directly with date x-values.
+events = [
+    ("2021-05-01", "Telebirr", "red"),
+    ("2023-08-01", "M-Pesa", "green"),
+    ("2025-12-09", "NDPS Launch", "purple"),
+]
+
+for event_date, event_label, event_color in events:
+    fig_trend.add_vline(x=event_date, line_dash="dash", line_color=event_color)
+    fig_trend.add_annotation(
+        x=event_date,
+        y=1,
+        xref="x",
+        yref="paper",
+        text=event_label,
+        showarrow=False,
+        yshift=10,
+        font=dict(color=event_color),
+    )
 
 st.plotly_chart(fig_trend, use_container_width=True)
 

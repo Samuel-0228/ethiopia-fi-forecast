@@ -8,3 +8,4 @@ streamlit
 pytest
 pathlib
 statsmodels
+altair.vegalite.v4
