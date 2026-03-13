@@ -58,7 +58,7 @@ cd ethiopia-fi-forecast
 pip install -r requirements.txt
 pip install -e .               
 
-# Run tests (should show 7+ passed)
+# Run tests
 pytest tests/
 
 # Launch dashboard
