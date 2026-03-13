@@ -56,7 +56,7 @@ git clone https://github.com/Samuel-0228/ethiopia-fi-forecast.git
 cd ethiopia-fi-forecast
 
 pip install -r requirements.txt
-pip install -e .               # makes src/ importable
+pip install -e .               
 
 # Run tests (should show 7+ passed)
 pytest tests/
